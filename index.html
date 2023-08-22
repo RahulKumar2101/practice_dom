@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>dom </h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      
+    </div>
+   <textarea id="input" name="w3review" rows="4" cols="50">
+    </textarea>
+        
+  </body>
+  <script>
+    const box = document.querySelector(".box");
+    console.log(box);
+
+    const input= document.querySelector('#input');
+    console.log(input);
+    let str='';
+    input.addEventListener ('keydown', function(e){
+      console.log(e.target.value);
+      // console.log('target',e.target.key);
+
+      box.innerText=e.key;
+
+    })
+
+  </script>
+</html>
